@@ -1,0 +1,946 @@
+
+html,body{
+    height: 100%;
+}
+html{
+    /*font-size: 16px;*/
+}
+body{
+    /*display:flex;*/
+    /*justify-content:center;*/
+    /*align-items: center;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+/*--------------------*/
+
+
+li, a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.very_head{
+    display: flex;
+    justify-content: flex-end; 
+    height: 64px;
+    justify-content: space-between;
+}
+
+.very_head img{
+    height: 60%;
+    margin: 16px;
+}
+
+.dropdown {
+    display: none;
+}
+
+.very_head ul{
+    display: flex;
+    margin: 19px 17px 0 0;
+}
+
+.very_head li{
+    display: inline-block;
+    padding: 3px 0px 0 23px;
+    font-size: 0.9rem;
+}
+
+.very_head a:first-child{
+    width: 100px;
+}
+
+.very_head li a:hover{
+    border-bottom: 2px solid #442c47;
+    text-decoration: none;
+}
+
+
+.very_head li a{
+    color: #2b2b2b;
+    padding-bottom: 5px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.rbn-overlay {
+    background: rgba(50, 50, 50, .5);
+}
+
+
+
+.wrapper{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 15px 0 15px;
+    /*border: 3px dotted red;*/
+}
+
+header{
+    margin: 30px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1{
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 40px;
+    letter-spacing: -0.8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #484848;
+    font-weight: 200;
+    width: 50%; 
+}
+
+header h1 span{
+    font-weight: 800 ;
+    color: #FF5A5F ;
+    margin-right: 3px;
+}
+
+header .search{
+    display: flex;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    border: 1px grey solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #8888A3;
+}
+
+header .search div{
+    flex-basis: 50%;
+    padding: 0 0 0 10px;
+}
+
+header .search div p i{
+    display: none;
+}
+
+.col_1{
+    width: 500px;
+}
+
+
+.search .col_1 label, .search .col_2 label{
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.search .col_1 input, .search .col_2 input{
+    border: none;
+    font-size: 23px;
+}
+
+.search .col_1 i , .search .col_2 i{
+    font-size: 22px;
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.search .col_1 input{
+    width: 310px;
+    text-transform: capitalize
+}
+
+/*.search .col_1 datalist{
+    width: 320px;
+}*/
+
+.search .col_2 input{
+    width: 150px;
+}
+
+header .search div p:first-child{
+    color: #484848;
+    margin: 8px 0 8px 0; 
+}
+
+header .search div p:last-child{
+    color: #878787;
+    font-size: 1.3em;
+    margin: 8px 0 8px 0;
+}
+
+header .search .col_1{
+    border-right: 1px grey solid;
+}
+
+
+header .search .col_4{
+    display: none;
+}
+
+/*-----------menu-----------*/
+
+nav{
+    display: flex;
+    margin: 30px 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #8888A3;
+}
+
+nav ul{
+    display: flex;
+    margin: 0px 0px 0 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 3px 18px 0 0px;
+    font-size: 0.9rem;
+}
+
+nav li a{
+    color: #2b2b2b;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+nav li a:hover{
+    border-bottom: 2px solid #442c47;
+}
+
+nav li a:active{
+    color: #442c47;
+}
+
+main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+main article{
+    min-width: 250px;
+    width: 22%;
+    margin: 30px 10px 30px 0;
+    /*flex-grow: 1;*/
+
+}
+
+main article img{
+    width: 100%;
+}
+
+main article p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+.price::after{
+    content: '$'
+}
+
+.fa-star, .fa-star-o, .fa-star-half-o{
+    color: #2FB6AC;
+    margin-right: 5px;
+}
+
+footer{
+    color: #2b2b2b;
+    height: 380px;
+    border-top: 0.1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    /*margin-top: 100vh;*/
+}
+
+footer .footerLinks{
+    /*width: 1080px;*/
+    /*margin: auto;*/
+    padding: 0 15px 0 15px;
+     
+}
+
+footer .footerLinks ul{
+    font-weight: 800;
+    color: #2b2b2b;
+}
+
+footer .footerLinks .footerLinksGroup{
+    display: inline-block;
+    margin: 20px 50px 30px 50px;
+}
+
+
+footer .footerLinks ul li{
+    font-weight: 300;
+    color: #2b2b2b;
+    
+}
+
+.aboutPage{
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.aboutPage h2{
+    text-align: center;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 32px;
+    color: #2b2b2b;
+}
+
+.aboutPage p{
+    text-align: center;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2b2b2b;
+}
+
+.aboutPage img{
+    margin: auto;
+    margin-top: 30px;
+}
+
+.PageInsideRight .carousel{
+    width: 350px !important;
+    /*height: 550px !important;*/
+}
+
+
+/*----------single product details---------*/
+
+.locationInner .headerImg{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    height: 420px !important;
+}
+
+.locationInner .carousel .carousel-inner{
+    height: 420px;
+}
+
+.locationInner .carousel .carousel-inner .item div{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 50% 60% !important;
+    height: 420px !important;
+}
+
+.locationInner main{
+    margin: auto;
+    /*margin-top: 70px;*/
+    max-width: 1080px;
+    display: flex;
+    /*border: 1px dotted yellow;*/
+
+}
+
+.locationInner main .PageInsideLeft{
+    flex-basis: 65%;
+    /*border-right: 1px dotted yellow;*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.locationInner main .PageInsideLeft .innerNav{
+    border-bottom: 1px solid lightgrey;
+    padding: 5px 15px;    
+
+}
+
+.locationInner main .PageInsideLeft .innerNav ul li{
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.locationInner main .PageInsideLeft .innerNav ul li a{
+    text-decoration: none;
+    font-weight: 800;
+    padding-bottom: 3px;
+    color: #2FB6AC;
+}
+
+.locationInner main .PageInsideLeft .innerNav ul li a:hover{
+    color: black;
+    border-bottom: 2px solid #2FB6AC;
+}
+
+.locationInner main .smallHeader{
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0 20px 16px;
+}
+
+.locationInner main .smallHeader h2{
+    font-size: 36px;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.locationInner main .smallHeader div, .locationInner main .smallHeader p {
+    display: inline;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+
+.locationInner main .locationFeutures{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px 5px 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.locationInner main .locationFeutures div{
+    display: flex;
+    flex-direction: column;
+}
+
+.locationInner main .locationFeutures i{
+    text-align: center;
+    font-size: 50px;
+    color: grey;
+}
+
+.locationInner main .locationFeutures span{
+    text-align: center;
+    font-size: 30px;
+    color: grey;
+}
+
+.locationInner main .locationDescription{
+    padding: 18px 5px 15px 16px;
+    font-size: 18px;
+    color: black;
+    border-bottom: 1px solid lightgrey;
+    letter-spacing: 1px;
+}
+
+.locationInner main .locationReviewsMain h3{
+    font-size: 32px;
+    padding: 4px 16px 30px 16px;
+}
+
+.locationInner main .locationReviewsMain .locationReviewsSingle{
+    padding: 4px 10px 15px 16px;
+}
+
+.locationInner main .locationReviewsMain .locationReviewsSingle h3{
+    font-size: 20px;
+}
+
+.locationInner main .locationReviewsMain .locationReviewsSingle p{
+    font-size: 16px;
+}
+
+.locationInner main .PageInsideRight{
+    flex-basis: 35%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.locationInner main .PageInsideRight .bookingPlace{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 34px;
+}
+
+.locationInner main .PageInsideRight .bookingPlace .priceSection{
+    background: black;
+    color: white;
+    height: 52px;
+    font-size: 30px;
+    line-height: 51px;
+    padding-left: 10px;
+}
+
+.locationInner main .PageInsideRight .bookingPlace .check .checkLabels{
+    background-color: white;
+    margin: 20px 3px 7px 3px;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.locationInner main .PageInsideRight .bookingPlace .pricePerNigth div span:first-child::before{
+    content: "$ "
+}
+
+.locationInner main .PageInsideRight .bookingPlace .check .checkInputs{
+    margin: auto;
+    margin-bottom:23px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.locationInner main .PageInsideRight .bookingPlace .check .checkInputs .react-datepicker__input-container{
+    margin: 0;
+    padding: 0;
+}
+
+.locationInner main .PageInsideRight .bookingPlace .check .checkInputs .react-datepicker__input-container input{
+    text-align: center;
+    height: 35px;
+    font-size: 13px;
+}
+
+.locationInner main .PageInsideRight .bookingPlace button{
+    margin: auto;
+    width: 263px;
+    height: 60px;
+    font-size: 28px;
+    color: white;
+    background-color: #FF5A5F;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    line-height: 23px;
+    border: none;
+}
+
+.locationInner main .PageInsideRight .bookingPlace p:last-child{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 5px;    
+}
+
+.locationInner main .PageInsideRight .bookingPlace .checkGuests div{
+    text-align: center;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+
+}
+
+.locationInner main .PageInsideRight .bookingPlace .checkGuests input{
+    width: 200px;
+    height: 35px;
+    font-size: 13px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    border: 1px solid grey;
+    margin-top: 34px;
+    padding: 8px 10px;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares button{
+    margin: auto;
+    width: 263px;
+    height: 60px;
+    font-size: 28px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    line-height: 23px;
+    border: 1px solid grey;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares .iconLinks{
+    border-top: 1px solid lightgrey;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares .iconLinks ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.locationInner main .PageInsideRight .socialMediaShares .iconLinks ul li{
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+}
+
+
+.myMap{
+    position: relative;
+    overflow: hidden;
+    margin: 35px auto;
+    width: 100%;
+    height: 500px;
+}
+
+.reservationWrap{
+    max-width: 1080px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.reservationWrap .left{
+    flex-basis: 65%;
+    padding: 0 20px 0 10px;
+}
+
+.reservationWrap .left img{
+    width: 100%;
+    height: auto;
+}
+
+.reservationWrap .left p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.reservationWrap .right{
+    flex-basis: 35%;
+    background-color: #edfffd;
+    padding: 20px 10px;
+}
+
+.reservationWrap .right h3{
+    font-weight: 800;
+}
+
+.reservationWrap .right .details table tr{
+    margin-bottom: 35px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.reservationWrap .right .details table tbody tr td:first-child{
+    font-weight: 800;
+}
+#pricePerNight  td:last-child::before{
+    content: "$";
+
+}
+
+.reservationWrap .right .totalPrice h4{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.reservationWrap .right .totalPrice span{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.reservationWrap .right .totalPrice span::before{
+    content: "$"
+}
+
+.reservationWrap .right #Confirm{
+    margin: 20px auto;
+    width: 263px;
+    height: 60px;
+    font-size: 28px;
+    color: white;
+    background-color: #FF5A5F;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.reservationWrap .right #Confirm:active{
+    border: black solid 1px;
+    background-color: #f7a0a2;
+    color: black;
+}
+
+
+.wishList{
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.wishList h2{
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.wishList .singleListRow{
+    display: flex;
+    margin: 20px 0;
+    max-height: 210px;
+    border: 1px solid #eeeeee;
+}
+
+.wishList .singleListRow .left{
+    flex-basis: 30%;
+}
+
+.wishList .singleListRow .left img{
+    width: 100%;
+    height: auto;
+}
+
+.wishList .singleListRow .center{
+    flex-basis: 50%;
+    padding: 5px 10px 0 15px;
+    border-right: 1px solid #eeeeee;
+}
+.wishList .singleListRow .center .wishDescription{
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 110px;
+}
+
+.wishList .singleListRow .center h4{
+    margin: 0;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.wishList .singleListRow .center .wishPlace{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.wishList .singleListRow .right{
+    flex-basis: 24%;
+}
+
+.wishList .singleListRow .right h3{
+    text-align: center;
+    font-size: 58px;
+    color: #FF5A5F;
+    font-weight: 400;
+}
+
+.wishList .singleListRow .right h3::before{
+    font-size: 40px;
+    content: "$"
+}
+
+.wishList .singleListRow .right h3::after{
+    content: " per night";
+    font-size: 16px;
+    color: gray;
+}
+
+.wishList .singleListRow .right .detalsBtn{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    border-radius: 6px;
+    line-height: 40px;
+    background-color: #2FB6AC
+
+}
+
+.wishList .singleListRow .right .detalsBtn:active{
+    background-color: black;
+}
+
+.wishList .singleListRow .right .removeBtn{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    margin:10px auto;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    border-radius: 6px;
+    line-height: 40px;
+    background-color: #FF5A5F;
+}
+
+.wishList .singleListRow .right .removeBtn:active{
+    border: black solid 1px;
+    background-color: #f7a0a2;
+    color: black;
+}
+
+
+/*----------datepicker----------*/
+
+
+.react-datepicker {
+  font-size: 1em !important;
+}
+.react-datepicker__header {
+  padding-top: 0.8em !important;
+}
+.react-datepicker__month {
+  margin: 0.4em 1em !important;
+}
+.react-datepicker__day-name, .react-datepicker__day {
+  width: 1.9em !important;
+  line-height: 1.9em !important;
+  margin: 0.166em !important;
+}
+.react-datepicker__current-month {
+  font-size: 1em !important;
+}
+.react-datepicker__navigation {
+  top: 1em !important;
+  line-height: 1.7em !important;
+  border: 0.45em solid transparent !important;
+}
+.react-datepicker__navigation--previous {
+  border-right-color: #ccc !important;
+  left: 1em !important;
+}
+.react-datepicker__navigation--next {
+  border-left-color: #ccc !important;
+  right: 1em !important;
+}
+
+@media screen and (max-width:960px){
+    .very_head{
+        justify-content: flex-start;
+    }
+
+    header .search .col_1{
+        border: none;
+    }
+
+    .very_head i {
+        display: inline;
+        line-height: 70px;
+        
+    }
+
+    header .search{
+        display: block;
+    }
+
+    .col_4 p{
+        color: black !important;
+        margin: 8px 0 8px 0 !important;
+        font-size: 1.3rem !important;
+    }
+
+    main article{
+        flex-grow: 1;
+
+    }
+
+    .locationInner main {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .myMap{
+        /*width: 90%;*/
+        height: 300px;
+    }
+    .reservationWrap{
+        flex-direction: column;
+    }
+
+    .reservationWrap .left{
+        flex-basis: 90%;
+        margin: auto;
+    }
+    .reservationWrap .right{
+        flex-basis: 90%;
+        margin: 10px auto;
+    }
+
+    .wishList .singleListRow .left{
+        display: none;
+    }
+
+    .wishList .singleListRow .center{
+        flex-basis: 60%;
+    }
+
+    .wishList .singleListRow .right{
+        flex-basis: 40%;
+    }
+
+    .wishList .singleListRow .right h3{
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width:1080px){
+    header h1{
+        width: 100%;
+    }
+
+    main article{
+        flex-grow: 1;
+
+    }
+
+    /*.col_3 input{
+        display: none;
+    }   */
+
+    /*header .search div p:first-child{
+    display: none; 
+    }*/
+
+    /*.col_3 p:nth-child(2){
+        display: none;
+    }*/
+
+    /*header .search div p i{
+    display: inline;
+}*/
+
+    /*.locationPageInside{
+        flex-direction: column-reverse;
+    }*/
+
+
+    /*.locationInner main .PageInsideRight{
+        margin-top: 0;
+    }*/
+
+    .locationInner main{
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .myMap{
+        /*width: 90%;*/
+        height: 300px;
+    }
+
+
+}
